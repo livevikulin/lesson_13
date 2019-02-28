@@ -6,6 +6,6 @@ button.addEventListener('click', function(){
     modal.classList.add('modal_active');
 });
 
-close.addEventListener('click', function(){
+setTimeout(function(){
     modal.classList.remove('modal_active');
-});
+}, 5000);
