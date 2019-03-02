@@ -12,7 +12,9 @@ $(document).ready(function(){
         modal.removeClass('modal_active');
     });
 
-    var timer = setTimeout(function(){
-        modal.removeClass('modal_active');
-    }, 5000);
+    button.on('click', function(){
+      setTimeout(() => {
+          modal.removeClass('modal_active');
+      }, 5000);  
+    });
 });
