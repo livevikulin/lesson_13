@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 
     button.on('click', function(){
-      setTimeout(() => {
+      setTimeout(function(){
           modal.removeClass('modal_active');
       }, 5000);  
     });
