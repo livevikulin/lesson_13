@@ -5,7 +5,7 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function(){
-        if($(window).scrollTop() > 200){
+        if($(window).scrollTop() > 500){
             $('.btn_up').addClass('active');
         }
         else{
