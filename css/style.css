@@ -528,6 +528,8 @@ img {
   .portfolio__title {
     width: 280px;
     font-size: 18px;
+    margin: auto;
+    margin-bottom: 100px;
   }
 }
 
@@ -889,6 +891,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .brif {
+    background-size: 50%, cover;
+  }
   .brif__interview {
     padding-right: 30px;
   }
