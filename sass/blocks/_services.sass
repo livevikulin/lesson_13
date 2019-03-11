@@ -1,0 +1,46 @@
+.services-block 
+    display: flex
+    &__info 
+        width: 370px
+        height: 410px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+        background-color: #f7f7f7
+    &__title
+        font-size: 16px
+        line-height: 23px
+        margin: 27px 60px 0 26px
+        max-width: 289px
+    &__bold 
+        +bold
+@media (max-width: 1200px)
+    .services-block 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        &__info
+            margin-bottom: 30px
+            &:last-child 
+                margin-bottom: 0
+                margin-right: 30px
+@media (max-width: 768px)
+    .services-block 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        &__info
+            width: 272px
+            height: 300px
+            margin-bottom: 30px
+            margin-right: 0
+            &:last-child 
+                margin-bottom: 0
+                margin-right: 0
+        &__title 
+            font-size: 12px
+            line-height: 16.83px
+        

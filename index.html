@@ -67,11 +67,12 @@
                 <div class="offer-block">
                     <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
                     <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-                    <form action="#" class="form offer__form">
-                        <input type="text" class="input offer__input wow fadeInLeft" placeholder="Ваше имя">
-                        <input type="tell" class="input offer__input wow fadeInRight" placeholder="Ваш телефон">
+                    <form action="#" class="form offer__form" id="offer-form">
+                        <input type="text" name="username" class="input offer__input wow fadeInLeft" placeholder="Ваше имя">
+                        <input type="tell" name="phone" class="input offer__input phone wow fadeInRight" placeholder="Ваш телефон">
+                        <button class="button offer__button wow fadeInUp">Получить бесплатный дизайн-проект</button>
                     </form>
-                    <button class="button offer__button wow fadeInUp">Получить бесплатный дизайн-проект</button>
+                    
                     <div class="offer__info">
                         <div class="offer__info1">
                             <span class="offer-text1">Наш менеджер перезвонит Вам в течение 60 секунд</span>
@@ -217,6 +218,31 @@
                 </div>
             </div>
         </section>
+        <section class="section under-steps">
+            <div class="container">
+                <div class="under-steps__block">
+                    <h2 class="under-steps__title">Ремонт обойдется Вам дешевле, так как<br>мы используем качественные материалы по оптовым ценам</h2>
+                </div>
+            </div>
+        </section>
+        <section class="section services">
+            <div class="container">
+                <div class="services-block">
+                    <div class="services-block__info">
+                        <span class="services-block__title">Поможем закупить все материалы по оптовым ценам у проверенных поставщиков</span>
+                        <img src="img/services/services-1.png" alt="">
+                    </div>
+                    <div class="services-block__info">
+                        <span class="services-block__title">Мы дадим Вам <font class="services-block__bold">максимальные скидки</font> у наших партнеров для закупки материалов оптом</span>
+                        <img src="img/services/services-2.png" alt="">
+                    </div>
+                    <div class="services-block__info">
+                        <span class="services-block__title">Все, что не сможете найти в городе - поможем заказать <font class="services-block__bold">у проверенных поставщиков</font></span>
+                        <img src="img/services/services-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section brif">
             <div class="container">
                 <div class="brif-block">
@@ -257,6 +283,44 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="map" id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3a630e8cf28f40e682c0409210802464cc1db94753c0ebc54014d627e01b15e3&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="container">
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/map-placeholder.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">г. Москва<br>
+                                <font class="contacts-list__bold">ул. Ленинга, д. 10, корпус 2, оф. 308</font>
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                    <img src="img/footer/clock-with-white-face.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">Режим работы:<br>
+                                <font class="contacts-list__bold">с 9:00 до 18:00</font>
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                    <img src="img/footer/phone-call-button.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">Телефон:<br>
+                                <a href="tel:+7(495)42-251-31" class="contacts-list__phone">+ 7 (495) 42-251-31</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="modal" id="modal">
         <div class="modal-dialog">
@@ -275,6 +339,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script>
+        /*Инициализация WOW*/
         new WOW().init();
 
         $(document).ready(function(){
@@ -298,6 +363,22 @@
                     email: {
                         required: "Введите ваш email",
                         email: "Email адрес должен быть формата name@domain.ru"
+                    }
+                },
+                errorClass: "invalid",
+                errorElement: "div"
+            });
+            $('#offer-form').validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2
+                    }
+                },
+                messages: {
+                    username: {
+                        required: "Введите ваше имя",
+                        minlength: jQuery.validator.format("Имя должно содержать не менее 2 символов!")
                     }
                 },
                 errorClass: "invalid",

@@ -63,14 +63,29 @@
         font-size: 16px
     &__description 
         display: block
+#brif-form 
+    position: relative
+    max-width: 370px
 .invalid 
+    display: inline-block
     border: 1px solid red
     color: red
+    margin-bottom: 30px
 #username-error
     border: none
     margin-bottom: 15px
+    position: absolute
+    left: 0
+    top: 0
+    margin-top: 67px
+    font-size: 11px
 #email-error 
     border: none
+    margin-bottom: 15px
+    position: absolute
+    left: 0
+    margin-top: 67px
+    font-size: 11px
 
 @media (max-width: 1200px)
     .brif 
@@ -93,18 +108,40 @@
     .form
         &__title 
             font-size: 20px 
-            margin-bottom: 15px
+            margin-bottom: 25px
         &__subtitle 
-            margin-bottom: 30px
+            margin-bottom: 50px
 @media (max-width: 768px)
     .brif 
         background-image: url('../img/brif/interview-color-bg.jpg'), url('../img/brif/form-bg.jpg')
         background-position: top center, center bottom
-        background-size: 100% 50%, cover 
+        background-size: 100% 43%, cover 
         background-repeat: repeat-x, no-repeat
+        padding-top: 46px
+        padding-bottom: 65px
+        &__interview 
+            padding-right: 0 
         &-block 
             flex-direction: column
         &__form 
-            margin-top: 60px
+            margin-top: 115px
+            padding-left: 0
+    .interview 
+        &__title 
+            font-size: 18px
+            margin-bottom: 16px
+        &__subtitle 
+            margin-bottom: 39px
+        &-list 
+            &__item 
+                display: flex
+                align-items: center
+                margin-bottom: 26px
+            &__text 
+                font-size: 14px 
+                max-width: 231px
+            &__counter 
+                margin-right: 8px
+
 
 
