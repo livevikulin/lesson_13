@@ -71,7 +71,7 @@
                     <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
                     <form action="#" class="form offer__form" id="offer-form" onsubmit="ym(52741762, 'reachGoal', 'offer-form'); return true;">
                         <input type="text" name="username" class="input offer__input wow fadeInLeft" placeholder="Ваше имя">
-                        <input type="tell" name="phone" class="input offer__input phone wow fadeInRight" placeholder="Ваш телефон">
+                        <input type="tel" name="phone" class="input offer__input phone wow fadeInRight" placeholder="Ваш телефон">
                         <button class="button offer__button wow fadeInUp">Получить бесплатный дизайн-проект</button>
                     </form>
                     
@@ -352,6 +352,10 @@
                         required: true,
                         minlength: 2
                     },
+                    phone: {
+                        required: true,
+                        minlength: 10
+                    },
                     email: {
                         required: true,
                         email: true
@@ -361,6 +365,10 @@
                     username: {
                         required: "Введите ваше имя",
                         minlength: jQuery.validator.format("Имя должно содержать не менее 2 символов!")
+                    },
+                    phone: {
+                        required: "Введите ваш телефон",
+                        minlength: jQuery.validator.format("Телефон должен содержать не менее 10 символов!")
                     },
                     email: {
                         required: "Введите ваш email",
@@ -375,12 +383,20 @@
                     username: {
                         required: true,
                         minlength: 2
+                    },
+                    phone: {
+                        required: true,
+                        minlength: 10
                     }
                 },
                 messages: {
                     username: {
                         required: "Введите ваше имя",
                         minlength: jQuery.validator.format("Имя должно содержать не менее 2 символов!")
+                    },
+                    phone: {
+                        required: "Введите ваш телефон",
+                        minlength: jQuery.validator.format("Телефон должен содержать не менее 10 символов!")
                     }
                 },
                 errorClass: "invalid",

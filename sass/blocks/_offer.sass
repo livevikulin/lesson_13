@@ -3,6 +3,7 @@
     background-position: center right 
     background-size: contain
     position: relative
+    padding-top: 75px
     &:before 
         content: ''
         width: 50%
@@ -18,7 +19,7 @@
     &__title 
         max-width: 360px
         line-height: 35px
-        margin-bottom: 24px
+        margin-bottom: 20px
         font-size: 24px
         +bold
     &__subtitle 
@@ -26,24 +27,26 @@
         margin-bottom: 30px
     &__input 
         width: 240px
+        height: 65px
         margin-bottom: 30px
         &:first-child 
             margin-right: 10px
     &__button 
         width: 100%
+        font-size: 16px
         min-height: 70px
         margin-bottom: 30px
     &__info 
         display: flex
         justify-content: space-between
     &__info1 
-        width: 50%
-        margin-right: 70px
+        width: 55%
+        margin-right: 67px
     &-text1 
         font-size: 15px
         line-height: 24px
     &__info2 
-        width: 50%
+        width: 45%
     &-text2 
         font-size: 15px
         line-height: 24px
@@ -77,12 +80,18 @@
 @media (max-width: 768px)
     .offer 
         background: #fff
+        padding-top: 40px
+        padding-bottom: 55px
         &-block 
             width: 100%
             padding-right: 0
+        &__form
+            max-width: 275px
+            width: 100%
         &__info1
             display: block
             width: 70%
+            margin-bottom: 10px
         &__info2
             display: block
             width: 70%

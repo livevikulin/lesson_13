@@ -10,18 +10,20 @@
             font-size: 41px
             text-align: left
             +bold
-            margin-bottom: 50px
+            line-height: 55px
+            margin-bottom: 38px
         &__subtitle 
             display: inline-block
             font-size: 20px
-            margin-bottom: 70px  
+            margin-bottom: 70px 
+            +bold 
     &-list 
         margin: 0
         padding: 0
         &__item 
             display: flex
             align-items: center
-            margin-bottom: 30px
+            margin-bottom: 25px
             &:last-child 
                 margin-bottom: 0
         &__image 
@@ -34,7 +36,9 @@
             border-radius: 50%
             margin-right: 30px
         &__text 
-            max-width: 300px
+            max-width: 240px
+            font-size: 14px
+            line-height: 24px
     &-image 
         &__img 
             box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
@@ -48,11 +52,12 @@
             padding-right: 10px
 @media (max-width: 768px)
     .hero 
+        padding-top: 40px
         &-text 
             &__title
                 font-size: 24px
                 line-height: 1.4
-                margin-bottom: 15px
+                margin-bottom: 10px
             &__subtitle  
                 font-size: 16px
                 margin-bottom: 28px

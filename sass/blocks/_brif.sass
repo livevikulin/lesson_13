@@ -3,6 +3,7 @@
     background-position: left center, center right
     background-size: 50%, contain 
     background-repeat: repeat-y, no-repeat 
+    padding-top: 80px
     &-block 
         display: flex
     &__interview 
@@ -25,8 +26,10 @@
 .interview 
     padding-right: 70px
     &__title
+        max-width: 515px
         margin-bottom: 50px
         font-size: 22px
+        line-height: 33px
         +bold  
     &__subtitle
         display: block 
@@ -56,6 +59,7 @@
     &__title 
         margin-bottom: 50px
         font-size: 22px
+        line-height: 33px
         +bold 
     &__subtitle 
         display: block
@@ -77,6 +81,13 @@
     position: absolute
     left: 0
     top: 0
+    margin-top: 67px
+    font-size: 11px
+#phone-error 
+    border: none
+    margin-bottom: 15px
+    position: absolute
+    left: 255px
     margin-top: 67px
     font-size: 11px
 #email-error 
@@ -117,19 +128,21 @@
         background-position: top center, center bottom
         background-size: 100% 43%, cover 
         background-repeat: repeat-x, no-repeat
-        padding-top: 46px
+        padding-top: 25px
         padding-bottom: 65px
         &__interview 
             padding-right: 0 
         &-block 
             flex-direction: column
         &__form 
-            margin-top: 115px
+            margin-top: 65px
             padding-left: 0
     .interview 
+        padding-right: 0 
         &__title 
             font-size: 18px
             margin-bottom: 16px
+            line-height: 1.4
         &__subtitle 
             margin-bottom: 39px
         &-list 
@@ -142,6 +155,9 @@
                 max-width: 231px
             &__counter 
                 margin-right: 8px
+    .form
+        &__title 
+            line-height: 1.4
 
 
 
