@@ -329,6 +329,7 @@ img {
   }
   .hero-list__text {
     font-size: 12px;
+    max-width: 199px;
   }
   .hero-list__image {
     margin-right: 15px;
@@ -457,6 +458,18 @@ img {
   }
   #username-error {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .offer {
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
 
