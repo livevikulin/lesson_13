@@ -29,7 +29,8 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -318,7 +319,8 @@ img {
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
   .hero-text__subtitle {
     font-size: 16px;
@@ -330,9 +332,14 @@ img {
   .hero-list__text {
     font-size: 12px;
     max-width: 199px;
+    line-height: 1.4;
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+  .hero-image {
+    max-width: 270px;
+    max-height: 231px;
   }
 }
 
@@ -441,7 +448,8 @@ img {
     margin-bottom: 10px;
   }
   .offer__button {
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 18px;
   }
   .offer__info {
     display: -webkit-box;
@@ -502,6 +510,12 @@ img {
   .offer__title {
     font-size: 18px;
     line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+  .offer__button {
+    padding-left: 62px;
+    padding-right: 62px;
   }
 }
 
@@ -517,6 +531,7 @@ img {
   line-height: 45px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  margin-top: 0;
 }
 
 .portfolio__arrows {
@@ -531,15 +546,19 @@ img {
           justify-content: space-between;
 }
 
+.slider__item {
+  outline: none;
+}
+
 .slider__image {
-  max-width: 270px;
-  max-height: 211px;
+  max-width: 370px;
+  max-height: 280px;
   margin: auto;
 }
 
 @media (max-width: 768px) {
   .portfolio {
-    padding-top: 45px;
+    padding-top: 35px;
     padding-bottom: 60px;
   }
   .portfolio__title {
@@ -547,10 +566,15 @@ img {
     font-size: 18px;
     line-height: 1.4;
     margin: auto;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
   .portfolio__arrows {
     margin-top: 46px;
+  }
+  .slider__image {
+    max-width: 246px;
+    max-height: 186px;
+    margin: auto;
   }
 }
 
@@ -683,6 +707,13 @@ img {
     margin-top: 5px;
     margin-bottom: 45px;
   }
+  .card {
+    max-width: 271px;
+    max-height: 300px;
+  }
+  .card__text {
+    padding-top: 30px;
+  }
   .cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -693,6 +724,7 @@ img {
   }
   .card__title {
     font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 
@@ -737,6 +769,8 @@ img {
 
 .step__text {
   font-size: 14px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   max-width: 160px;
   margin: auto;
 }
@@ -1107,9 +1141,9 @@ img {
             align-items: center;
   }
   .under-steps__title {
-    max-width: 255px;
+    max-width: 260px;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 

@@ -7,6 +7,7 @@
         font-size: 30px
         line-height: 45px
         +bold
+        margin-top: 0
     &__arrows
         max-width: 120px
         margin: auto
@@ -14,22 +15,29 @@
         display: flex
         justify-content: space-between
 .slider 
+    &__item 
+        outline: none
     &__image
-        max-width: 270px
-        max-height: 211px
+        max-width: 370px
+        max-height: 280px
         margin: auto
 @media (max-width: 768px)
     .portfolio 
-        padding-top: 45px
+        padding-top: 35px
         padding-bottom: 60px
         &__title 
             width: 280px
             font-size: 18px
             line-height: 1.4
             margin: auto 
-            margin-bottom: 45px
+            margin-bottom: 35px
         &__arrows 
             margin-top: 46px
+    .slider 
+        &__image
+            max-width: 246px
+            max-height: 186px
+            margin: auto
         
 
     
